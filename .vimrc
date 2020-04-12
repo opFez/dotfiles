@@ -42,9 +42,11 @@ colorscheme 256_noir
 " Maps
 map <Space> <Leader>
 map <Leader>f :Goyo<CR>
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>t :NERDTreeToggle<CR>
 map <Leader>ms :MarkdownPreview<CR>
 map <Leader>md :MarkdownPreviewStop<CR>
+map <Leader>nn :set number relativenumber<CR>
+map <Leader>nm :set number! relativenumber!<CR>
 inoremap ,t <C-V><Tab>
 
 " Tab stuff

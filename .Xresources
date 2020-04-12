@@ -1,8 +1,8 @@
 ! X colors.
 ! Base16 Bright
-URxvt.font: xft:Hack-Regular:size=10
-XTerm.vt100.faceName: xft:Hack-Regular:size=10
-UXTerm.font: xft:Hack-Regular:size=10
+URxvt.font: xft:mononoki-Regular:size=10
+XTerm.vt100.faceName: xft:mononoki-Regular:size=10
+UXTerm.font: xft:mononoki-Regular:size=10
 
 URxvt.internalBorder: 20
 URxvt.scrollBar: false

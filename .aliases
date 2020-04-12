@@ -11,7 +11,7 @@ alias "pac"="doas pacman"
 alias "wednesday"="cat ~/wednesday.txt"
 alias "bat"="cat /sys/class/power_supply/BAT0/capacity"
 
-alias "bashrc"="vim ~/.bashrc"
+alias "zshrc"="vim ~/.zshrc"
 alias "vimrc"="vim ~/.vimrc"
 
 alias "massfetch"="pfetch ; ufetch ; ~/bin/fetch ; neofetch"
