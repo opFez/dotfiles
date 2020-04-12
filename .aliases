@@ -1,13 +1,19 @@
 alias "setno"="setxkbmap no"
 alias "setus"="setxkbmap us"
 alias "ls"="ls --color=auto"
+alias "grep"="grep --color=auto"
+
 alias "d"="dash"
 alias "p3"="python3"
-alias "wednesday"="cat ~/wednesday.txt"
-alias "bashrc"="vim ~/.bashrc"
-alias "vimrc"="vim ~/.vimrc"
-alias "bat"="cat /sys/class/power_supply/BAT0/capacity"
 alias "vim"="nvim"
 alias "pac"="doas pacman"
+
+alias "wednesday"="cat ~/wednesday.txt"
+alias "bat"="cat /sys/class/power_supply/BAT0/capacity"
+
+alias "bashrc"="vim ~/.bashrc"
+alias "vimrc"="vim ~/.vimrc"
+
 alias "massfetch"="pfetch ; ufetch ; ~/bin/fetch ; neofetch"
 alias "t"="todo.py"
+alias ".."="cd .."

@@ -15,4 +15,5 @@ if [ -f ~/.aliases ]; then
 fi
 
 export PS1="\[\e[37m\][\[\e[m\]\[\e[31m\]\w\[\e[m\]\[\e[37m\]]\[\e[m\]> "
+export PS2=">>> "
 
