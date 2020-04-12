@@ -1,8 +1,8 @@
 # .profile
 
-if [ -f ~/.bashrc ]; then
-   . ~/.bashrc
-fi
+#if [ -f ~/.bashrc ]; then
+#   . ~/.bashrc
+#fi
 
 # variables
 export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin"
