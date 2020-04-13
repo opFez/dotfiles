@@ -2,6 +2,8 @@
 # .xinitrc
 #
 
+xrandr --output HDMI1 --left-of eDP1
+
 # keyboard layout and binding capslock to escape
 setxkbmap no
 setxkbmap -option caps:swapescape

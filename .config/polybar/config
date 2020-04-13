@@ -14,6 +14,7 @@ secondary = #ffffff
 alert = #ff1900
 
 [bar/bar]
+monitor = ${env:MONITOR:eDP1}
 width = 100%
 height = 29
 ;offset-x = 1%
