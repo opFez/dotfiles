@@ -1,5 +1,7 @@
 " opfez's vimrc
 
+" Leader
+map <space> <leader>
 
 " Basic setup
 set nocompatible
@@ -8,6 +10,8 @@ set encoding=utf-8
 syntax on
 filetype plugin on
 set showcmd
+set ignorecase
+set smartcase   " only use case-sensitive search when you want to
 
 " Plugins
 " vim-plug check
@@ -40,14 +44,20 @@ colorscheme 256_noir
 "colorscheme noctu
 
 " Maps
-map <Space> <Leader>
-map <Leader>f :Goyo<CR>
-map <Leader>t :NERDTreeToggle<CR>
-map <Leader>ms :MarkdownPreview<CR>
-map <Leader>md :MarkdownPreviewStop<CR>
-map <Leader>nn :set number relativenumber<CR>
-map <Leader>nm :set number! relativenumber!<CR>
-inoremap ,t <C-V><Tab>
+map <leader>f :Goyo<CR>
+map <leader>t :NERDTreeToggle<cr>
+map <leader>m <plug>MarkdownPreviewToggle
+map <leader>n :set number! relativenumber!<CR>
+map <leader>c :setlocal formatoptions-=cro<CR>
+map <leader>C :setlocal formatoptions=cro<CR>
+map <leader>s :s//gI<left><left><left>
+map <leader><tab> <C-V><Tab>
+
+" Split navigation maps
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Tab stuff
 set autoindent

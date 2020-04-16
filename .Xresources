@@ -1,8 +1,12 @@
 ! X colors.
+
+! Set depth to make transparency work.
+URxvt*depth: 32
+
 ! Base16 Bright
-URxvt.font: xft:mononoki-Regular:size=10
-XTerm.vt100.faceName: xft:mononoki-Regular:size=10
-UXTerm.font: xft:mononoki-Regular:size=10
+URxvt.font: xft:mononoki-Regular:size=9
+XTerm.vt100.faceName: xft:mononoki-Regular:size=9
+UXTerm.font: xft:mononoki-Regular:size=9
 
 URxvt.internalBorder: 20
 URxvt.scrollBar: false
@@ -56,5 +60,3 @@ XClock*hourColor:   rgba:f4/f4/f4/ff
 XClock*minuteColor: rgba:f4/f4/f4/ff
 XClock*secondColor: rgba:f4/f4/f4/ff
 
-! Set depth to make transparency work.
-URxvt*depth: 32

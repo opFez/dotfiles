@@ -24,6 +24,9 @@ fi
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^f' edit-command-line
 
+# reverse command search
+bindkey '^R' history-incremental-search-backward
+
 # apparently you should add this with vi-mode
 export KEYTIMEOUT=1
 

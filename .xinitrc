@@ -3,6 +3,7 @@
 #
 
 xrandr --output HDMI1 --left-of eDP1
+#enact --pos top
 
 # keyboard layout and binding capslock to escape
 setxkbmap no
@@ -19,9 +20,8 @@ xinput set-prop "DLL0665:01 06CB:76AD Touchpad" "libinput Accel Speed" 0.2 &
 
 # wallpaper
 #
-#~/.fehbg &
-#xsetroot -solid black
-hsetroot -solid '#111'
+~/.fehbg &
+#hsetroot -solid '#111'
 
 # various services
 #
