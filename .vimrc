@@ -12,6 +12,7 @@ filetype plugin on
 set showcmd
 set ignorecase
 set smartcase   " only use case-sensitive search when you want to
+set cursorline  " highlights current line
 
 " Plugins
 " vim-plug check
@@ -31,14 +32,23 @@ Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-Plug 'noahfrederick/vim-noctu'
 Plug 'tpope/vim-surround'
+
+Plug 'noahfrederick/vim-noctu'
+Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 
 " Theme
-set t_Co=256
-colorscheme 256_noir
+"set termguicolors
+colorscheme jellybeans
+
+"let g:gruvbox_contrast_dark = 'hard'
+"colorscheme gruvbox
+
+"set t_Co=256
+"colorscheme 256_noir
 
 "set notermguicolors t_Co=16
 "colorscheme noctu

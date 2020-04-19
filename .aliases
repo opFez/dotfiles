@@ -1,5 +1,5 @@
-alias "setno"="setxkbmap no"
-alias "setus"="setxkbmap us"
+alias "no"="setxkbmap no"
+alias "us"="setxkbmap us"
 alias "ls"="ls --color=auto"
 alias "grep"="grep --color=auto"
 

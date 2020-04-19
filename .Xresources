@@ -14,7 +14,7 @@ URxvt.scrollBar: false
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-URxvt*background:                     #000000
+URxvt*background:                     #1c1c1c
 URxvt*foreground:                     #e0e0e0
 URxvt*cursorColor:                    #e0e0e0
 

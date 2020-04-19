@@ -20,8 +20,8 @@ xinput set-prop "DLL0665:01 06CB:76AD Touchpad" "libinput Accel Speed" 0.2 &
 
 # wallpaper
 #
-~/.fehbg &
-#hsetroot -solid '#111'
+#~/.fehbg &
+hsetroot -solid '#0f0f0f'
 
 # various services
 #
