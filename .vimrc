@@ -61,7 +61,7 @@ map <leader>n :set number! relativenumber!<CR>
 map <leader>c :setlocal formatoptions-=cro<CR>
 map <leader>C :setlocal formatoptions=cro<CR>
 map <leader>s :s//gI<left><left><left>
-map <leader><tab> <C-V><Tab>
+inoremap >t <C-V><Tab>
 
 " Split navigation maps
 map <C-h> <C-w>h

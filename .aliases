@@ -17,3 +17,5 @@ alias "vimrc"="vim ~/.vimrc"
 alias "massfetch"="pfetch ; ufetch ; ~/bin/fetch ; neofetch"
 alias "t"="todo.py"
 alias ".."="cd .."
+
+alias "doom"="~/compiling/crispy-doom/src/crispy-doom -iwad ~/.local/share/crispy-doom/DOOM.WAD"
