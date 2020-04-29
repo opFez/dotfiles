@@ -46,7 +46,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = filesystem alsa ip-wlan battery date
+modules-right = xkeyboard filesystem alsa ip-wlan battery date
 
 tray-position = right
 tray-padding = 2 
@@ -71,8 +71,8 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
+label-layout = kb: %layout%
+;label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1

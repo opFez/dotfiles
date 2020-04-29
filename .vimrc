@@ -33,6 +33,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'tpope/vim-surround'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
 
 Plug 'noahfrederick/vim-noctu'
 Plug 'morhetz/gruvbox'
@@ -89,7 +91,6 @@ let NERDTreeDirArrows = 1 " Makes it look pwetty.
 " Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
-
 
 " Miscellaneous
 "inoremap jj <Esc>
