@@ -89,7 +89,7 @@
     # Markup is allowed
     format = "<b>%s</b>\n%b"
 
-    alignment = center
+    alignment = left
 
     # Show age of message if message is older than show_age_threshold
     # seconds.
@@ -226,19 +226,19 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#000000"
+    background = "#111111"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 4
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#000000"
+    background = "#111111"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 4
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#000000"
+    background = "#111111"
     foreground = "#fc1500"
     timeout = 0
     #icon = /path/to/icon

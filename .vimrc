@@ -13,6 +13,8 @@ set showcmd
 set ignorecase
 set smartcase   " only use case-sensitive search when you want to
 set cursorline  " highlights current line
+set mouse=a     " lets me copy text with the mouse correctly
+set clipboard+=unnamedplus   " system clipboard
 
 " Plugins
 " vim-plug check
@@ -33,8 +35,13 @@ Plug 'vim-syntastic/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'tpope/vim-surround'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
 
 Plug 'noahfrederick/vim-noctu'
 Plug 'morhetz/gruvbox'
@@ -55,14 +62,23 @@ colorscheme jellybeans
 "set notermguicolors t_Co=16
 "colorscheme noctu
 
+hi Normal guibg=NONE ctermbg=NONE
+
 " Maps
-map <leader>f :Goyo<CR>
+map <leader>f :Goyo<cr>
 map <leader>t :NERDTreeToggle<cr>
 map <leader>m <plug>MarkdownPreviewToggle
-map <leader>n :set number! relativenumber!<CR>
-map <leader>c :setlocal formatoptions-=cro<CR>
-map <leader>C :setlocal formatoptions=cro<CR>
+map <leader>n :set number! relativenumber!<cr>
+map <leader>c :setlocal formatoptions-=cro<cr>
+map <leader>C :setlocal formatoptions=cro<cr>
 map <leader>s :s//gI<left><left><left>
+map <leader>l :LLPStartPreview
+map <leader>d :w<cr>
+map <leader>ss :set nospell
+map <leader>se :setlocal spell spelllang=en_us
+map <leader>sr :setlocal spell spelllang=ru
+map <leader>gd <plug>(coc-definition)
+map <leader>gr <plug>(coc-references)
 inoremap >t <C-V><Tab>
 
 " Split navigation maps
@@ -91,6 +107,9 @@ let NERDTreeDirArrows = 1 " Makes it look pwetty.
 " Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
+
+" Live LaTeX previewer
+let g:livepreview_previewer = 'zathura'
 
 " Miscellaneous
 "inoremap jj <Esc>

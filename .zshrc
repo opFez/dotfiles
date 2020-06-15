@@ -41,7 +41,7 @@ zle -N zle-keymap-select
 
 # prompt
 setopt prompt_subst # to allow for ${variables}
-export PS1='%f[%F{red}%~%f]> '
+export PS1='%f[%F{cyan}%~%f]> '
 export PS2='%f>>> '
 export RPS1='%F{243}${vi_mode}'
 
