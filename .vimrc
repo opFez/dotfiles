@@ -1,7 +1,8 @@
 " opfez's vimrc
 
 " Leader
-map <space> <leader>
+"map <space> <leader>
+let mapleader = " "
 
 " Basic setup
 set nocompatible
@@ -36,8 +37,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'tpope/vim-surround'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
@@ -65,6 +66,7 @@ colorscheme jellybeans
 hi Normal guibg=NONE ctermbg=NONE
 
 " Maps
+map <leader><leader> :w<cr>
 map <leader>f :Goyo<cr>
 map <leader>t :NERDTreeToggle<cr>
 map <leader>m <plug>MarkdownPreviewToggle
@@ -79,6 +81,7 @@ map <leader>se :setlocal spell spelllang=en_us
 map <leader>sr :setlocal spell spelllang=ru
 map <leader>gd <plug>(coc-definition)
 map <leader>gr <plug>(coc-references)
+map <C-p> <esc><esc>:Files<cr>
 inoremap >t <C-V><Tab>
 
 " Split navigation maps

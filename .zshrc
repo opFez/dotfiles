@@ -76,3 +76,5 @@ n ()
 
 # plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh > /dev/null
+
+[[ `date +%a` == "Wen" ]] && cat $HOME/ascii/wednesday

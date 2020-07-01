@@ -22,7 +22,7 @@ xinput set-prop "DLL0665:01 06CB:76AD Touchpad" "libinput Accel Speed" 0.2 &
 # wallpaper
 #
 #~/.fehbg &
-hsetroot -solid '#0c0c0c'
+hsetroot -solid '#000000'
 
 #cd ~/bin/autowall
 #./autowall &
@@ -37,10 +37,11 @@ xrdb -merge .Xresources &
 sxhkd &
 xrandr --dpi 200 &
 dunst &
-polybar bar &
+#polybar bar &
+
+emcas --daemon &
 
 #~/bin/dwmbar &
 
 exec bspwm
 #~/bin/startdwm
-#exec 2bwm
